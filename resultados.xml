@@ -5,10 +5,20 @@
             <local>
                 <nombre>America</nombre>
                 <goles>2</goles>
+                <estadisticas>
+                    <tiro>14</tiro>
+                    <falta>10</falta>
+                    <tarjeta>Amarilla a Fidalgo</tarjeta>
+                </estadisticas>
             </local>
             <visitante>
                 <nombre>Guadalajara</nombre>
                 <goles>1</goles>
+                <estadisticas>
+                    <tiro>9</tiro>
+                    <falta>15</falta>
+                    <tarjeta>Roja a Sepulveda</tarjeta>
+                </estadisticas>
             </visitante>
         </partido>
     </jornada>
