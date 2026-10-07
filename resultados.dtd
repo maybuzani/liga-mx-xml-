@@ -2,6 +2,8 @@
         <!ELEMENT jornada (partido+)>
 
         <!ELEMENT partido (local, visitante, estadio?)>
+        <!ATTLIST partido
+                id ID #REQUIRED>
 
         <!ELEMENT local (nombre, goles, estadisticas?)>
         <!ELEMENT visitante (nombre, goles, estadisticas?)>
