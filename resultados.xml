@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liga>
+    <jornada>
+        <partido id="P1">
+            <local>
+                <nombre>America</nombre>
+                <goles>2</goles>
+            </local>
+            <visitante>
+                <nombre>Guadalajara</nombre>
+                <goles>1</goles>
+            </visitante>
+        </partido>
+    </jornada>
+</liga>

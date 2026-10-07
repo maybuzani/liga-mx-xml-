@@ -37,15 +37,15 @@ partido e identifique los datos necesarios.
 
 ### Preguntas de análisis
 
-1.  ¿Cuál debería ser el elemento raíz?
-2.  ¿Una jornada puede contener varios partidos?
-3.  ¿Cada partido debe contener exactamente dos equipos?
-4.  ¿Cómo distinguirían al equipo local del visitante?
+1.  ¿Cuál debería ser el elemento raíz? <liga>
+2.  ¿Una jornada puede contener varios partidos? Sí, una jornada agrupa múltiples partidos.
+3.  ¿Cada partido debe contener exactamente dos equipos? Sí, uno local y uno visitante.
+4.  ¿Cómo distinguirían al equipo local del visitante? <equipoLocal> y <equipoVisitante>
 5.  ¿El marcador debe representarse como un solo dato o separar los
-    goles?
-6.  ¿Las estadísticas pertenecen al partido o a cada equipo?
-7.  ¿Qué datos son obligatorios?
-8.  ¿Cuáles podrían ser opcionales?
+    goles? Separar los goles (<golesLocal> y <golesVisitante>
+6.  ¿Las estadísticas pertenecen al partido o a cada equipo? Pertenecen a cada equipo.
+7.  ¿Qué datos son obligatorios? ID del partido, jornada, equipos local/visitante, goles.
+8.  ¿Cuáles podrían ser opcionales? Estadio, fecha exacta, estadísticas detalladas (tiros, tarjetas).
 
 ## 4. Actividad 2 - Diseñar el modelo conceptual
 
@@ -71,18 +71,18 @@ liga
 
 Determinar si cada dato se representa como elemento o atributo (*Completar la tabla*):
 
-  | Información        | Elemento/Atributo | Justificación |
-  |--------------------|-------------------|---------------|
-  | Jornada            |                   |               |
-  | Fecha              |                   |               |
-  | ID del partido     |                   |               |
-  | Equipo local       |                   |               |
-  | Equipo visitante   |                   |               |
-  | Goles              |                   |               |
-  | Estadio            |                   |               |
-  | Estado del partido |                   |               |
-  | Posesión           |                   |               |
-  | Tarjetas           |                   |               |
+  | Información        | Elemento/Atributo | Justificación                                                           |
+  |--------------------|-------------------|-------------------------------------------------------------------------|
+  | Jornada            | Elemento          | Contiene a los partidos de esa fecha; actúa como contenedor jerárquico. |
+  | Fecha              | Atributo          | Es un metadato contextual del partido.                                  |
+  | ID del partido     | Atributo          | Identificador único del partido (ID).                                   |
+  | Equipo local       | Elemento          | Entidad que contendrá el nombre del club y sus estadísticas.            |
+  | Equipo visitante   | Elemento          | Entidad compleja que contendrá el nombre del club y sus estadísticas.          |
+  | Goles              | Elemento/Atributo | Puede ir como atributo de cada equipo o como elemento interno.                           |
+  | Estadio            | Elemento          | Dato de texto suplementario sobre el partido.                 |
+  | Estado del partido | Atributo          | Propiedad del partido (finalizado, suspendido).                                                                       |
+  | Posesión           | Elemento/Atributo | Métrica estadística perteneciente al rendimiento de un equipo.                                                                         |
+  | Tarjetas           | Elemento          | Estructura que puede contener múltiples eventos (amarillas/rojas).                                                                        |
 
 Registrar los cambios en el repositorio.
 ``` bash
