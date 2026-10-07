@@ -238,13 +238,13 @@ Cree `resultados-invalido.xml` e introduzca, uno por uno:
 Complear la siguiente tabla:
 
 | Prueba                     | ¿Bien formado? | ¿Válido? | Error detectado |
-|----------------------------|----------------|----------|-----------------|
-| Falta visitante            |                |          |                 |
-| Dos locales                |                |          |                 |
-| Orden incorrecto           |                |          |                 |
-| Falta atributo obligatorio |                |          |                 |
-| ID duplicado               |                |          |                 |
-| Elemento desconocido       |                |          |                 |                      
+|----------------------------|----------------|------|-----------------|
+| Falta visitante            | Si             | No   | Falta la etiqueta <visitante>             |
+| Dos locales                | Si             | No   | Sobra un elemento <local>               |
+| Orden incorrecto           | Si             | No   | <estadio> está fuera de lugar             |
+| Falta atributo obligatorio | Si             | No   | Falta el atributo id                |
+| ID duplicado               | Si             | No   | El valor "P1" está repetido                |
+| Elemento desconocido       | Si             | No   | La etiqueta <arbitro> no está declarada                |                      
 
 > **XML bien formado ≠ XML válido**
 

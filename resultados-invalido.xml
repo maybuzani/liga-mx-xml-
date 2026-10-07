@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE liga SYSTEM "../dtd/resultados.dtd">
+<liga>
+    <jornada>
+        <partido id="P101">
+            <local>
+                <nombre>America</nombre>
+                <goles>2</goles>
+            </local>
+        </partido>
+
+        <partido id="P102">
+            <local>
+                <nombre>America</nombre>
+                <goles>2</goles>
+            </local>
+            <local>
+                <nombre>Guadalajara</nombre>
+                <goles>1</goles>
+            </local>
+            <visitante>
+                <nombre>Pumas</nombre>
+                <goles>0</goles>
+            </visitante>
+        </partido>
+
+        <partido id="P103">
+            <estadio>Estadio Azteca</estadio>
+            <local>
+                <nombre>America</nombre>
+                <goles>2</goles>
+            </local>
+            <visitante>
+                <nombre>Guadalajara</nombre>
+                <goles>1</goles>
+            </visitante>
+        </partido>
+
+        <partido>
+            <local>
+                <nombre>Cruz Azul</nombre>
+                <goles>1</goles>
+            </local>
+            <visitante>
+                <nombre>Atlas</nombre>
+                <goles>0</goles>
+            </visitante>
+        </partido>
+
+        <partido id="P101">
+            <local>
+                <nombre>Tigres</nombre>
+                <goles>3</goles>
+            </local>
+            <visitante>
+                <nombre>Rayados</nombre>
+                <goles>2</goles>
+            </visitante>
+        </partido>
+
+        <partido id="P104">
+            <arbitro>Marco Ortiz</arbitro>
+            <local>
+                <nombre>Puebla</nombre>
+                <goles>0</goles>
+            </local>
+            <visitante>
+                <nombre>Toluca</nombre>
+                <goles>1</goles>
+            </visitante>
+        </partido>
+    </jornada>
+</liga>
