@@ -160,14 +160,14 @@ Definir el elemento raíz y sus descendientes mediante `<!ELEMENT ...>`.
 
 Determine las cardinalidades y completar la siguiente tabla:
 
-| Regla                                     | Expresión DTD |
-|-------------------------------------------|---------------|
-| Una liga contiene una o más jornadas      |               |
-| Una jornada contiene uno o más partidos   |               |
-| Un partido tiene exactamente un local     |               |
-| Un partido tiene exactamente un visitante |               |
-| Una estadística opcional                  |               |
-| Puede haber cero o más tarjetas           |               |
+| Regla                                     | Expresión DTD                                   |
+|-------------------------------------------|-------------------------------------------------|
+| Una liga contiene una o más jornadas      | <!ELEMENT liga (jornada+)>                      |
+| Una jornada contiene uno o más partidos   | <!ELEMENT jornada (partido+)>                   |
+| Un partido tiene exactamente un local     | <!ELEMENT partido (local, visitante, estadio?)> |
+| Un partido tiene exactamente un visitante | <!ELEMENT partido (local, visitante, estadio?)> |
+| Una estadística opcional                  | <!ELEMENT local (nombre, goles, estadisticas?)> |
+| Puede haber cero o más tarjetas           | <!ELEMENT estadisticas (falta, tiro)*>          |
 
 
 Registrar los cambios en el repositorio.

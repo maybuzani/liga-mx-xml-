@@ -1,0 +1,16 @@
+<!ELEMENT liga (jornada+)>
+        <!ELEMENT jornada (partido+)>
+
+        <!ELEMENT partido (local, visitante, estadio?)>
+
+        <!ELEMENT local (nombre, goles, estadisticas?)>
+        <!ELEMENT visitante (nombre, goles, estadisticas?)>
+
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT goles (#PCDATA)>
+        <!ELEMENT estadio (#PCDATA)>
+
+        <!ELEMENT estadisticas (falta | tiro | tarjeta)*>
+        <!ELEMENT falta (#PCDATA)>
+        <!ELEMENT tiro (#PCDATA)>
+        <!ELEMENT tarjeta (#PCDATA)>
