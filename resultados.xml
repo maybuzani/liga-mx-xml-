@@ -2,25 +2,68 @@
 <!DOCTYPE liga SYSTEM "../dtd/resultados.dtd">
 <liga>
     <jornada>
-        <partido id="P1">
+        <partido id="P101">
             <local>
-                <nombre>America</nombre>
+                <nombre>Toluca</nombre>
                 <goles>2</goles>
                 <estadisticas>
-                    <tiro>14</tiro>
-                    <falta>10</falta>
-                    <tarjeta>Amarilla a Fidalgo</tarjeta>
+                    <tiro>12</tiro>
+                    <falta>8</falta>
+                    <tarjeta>Amarilla a Baeza</tarjeta>
                 </estadisticas>
             </local>
             <visitante>
-                <nombre>Guadalajara</nombre>
+                <nombre>Pachuca</nombre>
                 <goles>1</goles>
                 <estadisticas>
                     <tiro>9</tiro>
-                    <falta>15</falta>
-                    <tarjeta>Roja a Sepulveda</tarjeta>
+                    <falta>14</falta>
+                    <tarjeta>Roja a Cabral</tarjeta>
                 </estadisticas>
             </visitante>
+            <estadio>Nemesio Diez</estadio>
+        </partido>
+
+        <partido id="P102">
+            <local>
+                <nombre>Santos Laguna</nombre>
+                <goles>0</goles>
+                <estadisticas>
+                    <tiro>7</tiro>
+                    <falta>11</falta>
+                </estadisticas>
+            </local>
+            <visitante>
+                <nombre>Pumas UNAM</nombre>
+                <goles>1</goles>
+                <estadisticas>
+                    <tiro>10</tiro>
+                    <falta>9</falta>
+                    <tarjeta>Amarilla a Huerta</tarjeta>
+                </estadisticas>
+            </visitante>
+            <estadio>Corona</estadio>
+        </partido>
+
+        <partido id="P103">
+            <local>
+                <nombre>Monterrey</nombre>
+                <goles>3</goles>
+                <estadisticas>
+                    <tiro>15</tiro>
+                    <falta>10</falta>
+                    <tarjeta>Amarilla a Canales</tarjeta>
+                </estadisticas>
+            </local>
+            <visitante>
+                <nombre>Club Leon</nombre>
+                <goles>1</goles>
+                <estadisticas>
+                    <tiro>6</tiro>
+                    <falta>13</falta>
+                </estadisticas>
+            </visitante>
+            <estadio>BBVA</estadio>
         </partido>
     </jornada>
 </liga>
